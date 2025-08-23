@@ -206,9 +206,9 @@ The frontend will automatically proxy API calls to your local Flask server at 12
 
 **IMPORTANT**: If you're running this in StackBlitz, CodeSandbox, or similar browser-based environments, the proxy to `127.0.0.1:5000` will fail with `ECONNREFUSED` errors. This is expected because these sandboxes cannot access your local machine.
 
-**Solution**: You need to expose your Flask backend publicly:
+Solution: You need to expose your Flask backend publicly:
 
-1. **Expose your backend publicly**:
+1. Expose your backend publicly:
    - **Option A - Using ngrok** (recommended for testing):
      ```bash
      # Install ngrok from https://ngrok.com/
@@ -255,6 +255,5 @@ The frontend will automatically proxy API calls to your local Flask server at 12
    - **Sandbox environments**: Use ngrok or deploy your backend, then add `?api=https://your-backend-url` to the frontend URL
    - **CORS issues**: Ensure your Flask backend has proper CORS headers configured
 
----
 
-**Project by DHANUSH RAJA (21MIC0158)**
+Project by DHANUSH RAJA (21MIC0158)
